@@ -1,0 +1,391 @@
+/** Google Fonts **/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/** General **/
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #022F40;
+}
+
+/** Fonts **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: 2.25em;
+	line-height: 44px;
+}
+h2 {
+	font-size: 1.75em;
+	line-height: 32px;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 26px;
+}
+h4 {
+	font-size: 1.125em;
+	line-height: 1.625em;
+}
+p {
+	font-size: 1em;
+	line-height: 24px;
+}
+p.small,
+span.small {
+	font-size: 0.875em;
+	line-height: 1.375;
+}
+p.xsmall,
+span.xsmall {
+	font-size: 0.75em;
+	line-height: 1.125em;
+}
+
+.negative h1,
+.negative h2,
+.negative h3,
+.negative h4,
+.negative p,
+.negative span {
+	color: #ffffff;
+}
+
+/** Buttons **/
+
+a.button,
+a.button-slidedown,
+form button.submit {
+	font-size: 1.125em;
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	font-weight: bold;
+	-webkit-transition: background .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+a.button,
+a.button-slidedown {
+	width: 180px;
+}
+a.button,
+form button.submit {
+	padding: 16.5px 0;
+}
+a.button-slidedown {
+	padding: 12px 0;
+}
+a.button.primary,
+a.button.primary:visited,
+a.button-slidedown,
+a.button-slidedown:visited,
+form button.submit,
+form button.submit:visited {
+	background: #FF6542;
+}
+a.button.primary:hover,
+a.button-slidedown:hover,
+form button.submit:hover {
+	background: #FF7E61;
+}
+a.button.primary:active,
+a.button-slidedown:active,
+form button.submit:active {
+	background: #FF5A36;
+}
+a.button.secondary,
+a.button.secondary:visited {
+	background: transparent;
+	border: 2px solid #ffffff;
+}
+a.button.secondary:hover,
+a.button.secondary:active {
+	background: #ffffff;
+	color: #2AB7CA;
+}
+
+/** Slidedown **/
+#slideDown {
+	position: fixed;
+	width: 100%;
+	margin-top: -200px;
+	padding-bottom: 37px;
+	background: #ffffff;
+	z-index: 999999;
+}
+#slideDown.slide {
+	-webkit-animation: slide 0.3s ease-in-out forwards;
+	animation: slide 0.3s ease-in-out forwards;
+}
+#slideTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	height: 64px;
+	box-shadow: 0 2px 2px 0 rgba(129,129,129,0.5);
+}
+#slideDT p {
+	display: none;
+}
+
+/** Header **/
+header {
+	background: url('../img/mobile/header_bg@2x.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 81px;
+}
+
+nav {
+	background-color: rgba(0,0,0,0.4);
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .col h1 {
+	margin-top: 85px;
+	margin-bottom: 19px;
+}
+header .col p {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 24px;
+}
+
+/** Random Logos **/
+section#logos {
+	background: #ffffff;
+	padding: 32px 0;
+}
+section#logos img {
+	margin-bottom: 20px;
+}
+
+/** Info **/
+section#info {
+	padding: 76px 0;
+	background: #FAFAFA;
+}
+section#info h2 {
+	margin-bottom: 56px;
+}
+section#info h3 {
+	margin: 10px 0 20px;
+}
+section#info p {
+	margin-bottom: 78px;
+}
+
+/** Form **/
+section#form {
+	padding: 76px 0 51px 0;
+	background: url('../img/mobile/form_bg@2x.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+section#form h2 {
+	margin: 0 10px 28px 10px;
+}
+section#form #formWrap {
+	background-color: rgba(0,0,0,0.2);
+	padding: 48px 29px;
+	width: 100%;
+}
+section#form #formWrap form label,
+section#form #formWrap form input {
+	font-size: 0.875em;
+	line-height: 24px;
+	width: 100%;
+}
+section#form #formWrap form label {
+	color: #ffffff;
+	margin: 0;
+}
+section#form #formWrap form input {
+	padding: 10px 16px;
+	color: #022F40;
+	margin-bottom: 20px;
+	background: #ffffff;
+}
+section#form #formWrap form input::placeholder {
+	color: #022F40;
+}
+section#form #formWrap form button.submit {
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	outline: none;
+}
+
+/** Custom Bootstrap **/
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.row {
+	margin-right: -20px;
+	margin-left: -20px;
+}
+
+
+/** Desktop Styles **/
+@media (min-width: 768px) {
+
+/** Fonts **/
+	h1 {
+		font-size: 4.5em;
+		line-height: 78px;
+		}
+	h2 {
+		font-size: 3.25em;
+		line-height: 64px;
+	}
+	h3 {
+		font-size: 2em;
+		line-height: 2.75em;
+	}
+	h4 {
+		font-size: 1.5em;
+		line-height: 2.125em;
+	}
+	h5 {
+		font-size: 1.25em;
+		line-height: 1.875em;
+	}
+	h6 {
+		font-size: 1.125em;
+		line-height: 1.5em;
+	}
+	p {
+		font-size: 0.938em;
+	}
+	p.small {
+		line-height: 1.5em;
+	}
+/** Header **/
+	header {
+		background: linear-gradient(236.65deg, rgba(5,92,116,0.65) 0%, #022F40 100%), url('../img/desktop/header@2x.png');
+		height: 755px;
+		background-size: auto;
+		background-position: 54% 62%;
+		padding-bottom: 235px;		
+	}
+	
+	nav {
+		height: 80px;
+	}
+	header .col h1 {
+		margin-top: 112px;
+		margin-bottom: 34px;
+	}
+	header .col p {
+		font-size: 1.25em;
+		line-height: 34px;
+		margin-bottom: 48px;
+	}
+	header #buttonWrap {
+		display: flex;
+		justify-content: center;
+	}
+	header #buttonWrap .button.primary {
+		margin-right: 24px;
+	}
+
+/** Random Logos **/
+	section#logos img {
+		width: 106px;
+		margin-bottom: 0;
+	}
+	section#logos {
+		padding: 42px 0 52px 0;
+	}
+/** Info **/
+	section#info .icon-wrap {
+		height: 95px;
+	}
+	section#info p {
+		margin: 0 40px;
+	}
+/** Form **/
+	section#form {
+		height: 755px;
+		padding-top: 96px;
+		background: linear-gradient(236.65deg, rgba(5,92,116,0.65) 0%, #022F40 100%), url(../img/desktop/form@2x.png);
+		background-size: auto;
+		background-position: 90% 0;
+	}
+	section#form .row {
+		align-items: center;
+	}
+	section#form h2 {
+		margin: 0;
+	}
+
+/** Hide Classes **/
+	.hideDT {
+		display: none;
+	}
+}
+
+
+/** Tablet Styles **/
+@media (min-width: 769px) {
+
+	/** Buttons **/
+	a.button-slidedown {
+		padding: 18px 0;
+	}
+
+	/** Slidedown **/
+	#slideDown {
+		padding-bottom: 13px;
+	}
+	#slideTop {
+		height: 92px;
+		padding-left: 135px;
+		padding-right: 105px;
+	}
+	#slideDT {
+		display: flex;
+		align-items: center;
+	}
+	#slideDT p {
+		display: inline-block;
+		padding-right: 48px;
+	}
+}
+
+/** Small Hide Classes **/
+@media (max-width: 600px) {
+	/** Hide Classes **/
+	.hideSM {
+		display: none !important;
+	}
+}
+
+/** Animation **/
+@-webkit-keyframes slide {
+	from {margin-top: -200px;}
+	to {margin-top: 0px;}
+}
+@keyframes slide {
+	from {margin-top: -200px;}
+	to {margin-top: 0px;}
+}
+
